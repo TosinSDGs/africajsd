@@ -1,1 +1,93 @@
+/*====================================================
 
+Africa Journal of Sustainable Development (AJSD)
+Main Stylesheet
+
+Version: 1.0
+Author: Africa Journal of Sustainable Development
+Website: https://africajsd.com
+
+This file serves as the master stylesheet and
+imports all modular CSS files.
+
+====================================================*/
+
+
+/*====================================================
+
+1. BASE STYLES
+
+Fonts
+Reset
+Variables
+Typography
+
+====================================================*/
+
+@import url("base.css");
+
+
+/*====================================================
+
+2. LAYOUT
+
+Container
+Header
+Navigation
+Hero
+Footer
+
+====================================================*/
+
+@import url("layout.css");
+
+
+/*====================================================
+
+3. COMPONENTS
+
+Buttons
+Cards
+Tables
+Forms
+Article Cards
+Statistics
+Badges
+Pagination
+
+====================================================*/
+
+@import url("components.css");
+
+
+/*====================================================
+
+4. PAGE-SPECIFIC STYLES
+
+Home
+About
+Current Issue
+Archives
+Editorial Board
+Author Guidelines
+Publication Ethics
+Contact
+News
+Call for Papers
+
+====================================================*/
+
+@import url("pages.css");
+
+
+/*====================================================
+
+5. RESPONSIVE DESIGN
+
+Desktop
+Tablet
+Mobile
+
+====================================================*/
+
+@import url("responsive.css");
