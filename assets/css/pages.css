@@ -246,6 +246,80 @@ EDITORIAL BOARD PREVIEW
 
 }
 
+
+/*====================================================
+
+JOURNAL STATISTICS
+
+====================================================*/
+
+.section-intro{
+
+    max-width:700px;
+
+    margin:15px auto 45px;
+
+    text-align:center;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.statistics-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stat-card h3{
+
+    color:var(--primary);
+
+    font-size:2.3rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+
+
 /*====================================================
 
 CURRENT ISSUE
