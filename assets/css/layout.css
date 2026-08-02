@@ -175,3 +175,143 @@ color:#fff;
 font-size:1.2rem;
 
 }
+
+/*====================================================
+
+FOOTER
+
+====================================================*/
+
+footer{
+
+    background:#0B3D2E;
+
+    color:#fff;
+
+    padding:60px 0 25px;
+
+    margin-top:80px;
+
+}
+
+.footer-brand{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.footer-brand h3{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.footer-brand p{
+
+    max-width:800px;
+
+    margin:0 auto;
+
+    line-height:1.8;
+
+    color:#d6d6d6;
+
+}
+
+
+
+/*==========================================
+FOOTER NAVIGATION
+==========================================*/
+
+.footer-nav{
+
+    margin:35px 0;
+
+}
+
+.footer-nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-nav a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.footer-nav a:hover{
+
+    color:var(--secondary);
+
+}
+
+
+
+/*==========================================
+CONTACT
+==========================================*/
+
+.footer-contact{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.footer-contact p{
+
+    margin:8px 0;
+
+    color:#d6d6d6;
+
+}
+
+
+
+/*==========================================
+COPYRIGHT
+==========================================*/
+
+.copyright{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:40px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#cfcfcf;
+
+    font-size:.95rem;
+
+}
