@@ -253,17 +253,23 @@ JOURNAL STATISTICS
 
 ====================================================*/
 
-.section-intro{
+.statistics{
 
-    max-width:700px;
+    background:var(--primary);
 
-    margin:15px auto 45px;
+    color:#fff;
+
+    padding:80px 0;
+
+}
+
+.statistics h2{
+
+    color:#fff;
 
     text-align:center;
 
-    color:#666;
-
-    line-height:1.8;
+    margin-bottom:50px;
 
 }
 
@@ -279,7 +285,9 @@ JOURNAL STATISTICS
 
 .stat-card{
 
-    background:#fff;
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
 
     padding:35px 25px;
 
@@ -287,13 +295,13 @@ JOURNAL STATISTICS
 
     border-radius:10px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
     transition:.3s;
 
 }
 
 .stat-card:hover{
+
+    background:rgba(255,255,255,.15);
 
     transform:translateY(-6px);
 
@@ -301,24 +309,27 @@ JOURNAL STATISTICS
 
 .stat-card h3{
 
-    color:var(--primary);
+    color:#fff;
 
     font-size:2.3rem;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
+
+    font-weight:700;
 
 }
 
 .stat-card p{
 
+    color:#fff;
+
     margin:0;
 
-    color:#555;
+    font-size:1rem;
 
     font-weight:500;
 
 }
-
 
 /*====================================================
 
