@@ -1,12 +1,28 @@
 /*====================================================
 
-BUTTONS
+AJSD WEBSITE
+
+COMPONENTS
+
+Phase 2A
+
+====================================================*/
+
+
+
+/*====================================================
+
+1. BUTTONS
 
 ====================================================*/
 
 .button{
 
-display:inline-block;
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
 
 padding:14px 28px;
 
@@ -14,11 +30,13 @@ background:var(--primary);
 
 color:#fff;
 
-border-radius:6px;
-
 font-weight:600;
 
-transition:.3s;
+border-radius:8px;
+
+transition:all .3s ease;
+
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 
 }
 
@@ -26,13 +44,19 @@ transition:.3s;
 
 background:var(--secondary);
 
-transform:translateY(-2px);
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
 
 }
 
 .button-outline{
 
-display:inline-block;
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
 
 padding:14px 28px;
 
@@ -40,7 +64,11 @@ border:2px solid var(--primary);
 
 color:var(--primary);
 
-border-radius:6px;
+border-radius:8px;
+
+background:#fff;
+
+font-weight:600;
 
 transition:.3s;
 
@@ -53,3 +81,1226 @@ background:var(--primary);
 color:#fff;
 
 }
+
+.button-small{
+
+padding:10px 20px;
+
+font-size:.9rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+2. GENERAL CARDS
+
+====================================================*/
+
+.card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+border:1px solid var(--border);
+
+height:100%;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+.card p:last-child{
+
+margin-bottom:0;
+
+}
+
+
+
+
+
+.card-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+
+
+
+
+/*====================================================
+
+3. JOURNAL CARDS
+
+Used for Current Issue,
+Archives,
+Research Areas,
+News,
+Editorial Preview
+
+====================================================*/
+
+.journal-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+border-top:5px solid var(--primary);
+
+}
+
+.journal-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.journal-card h3{
+
+margin-bottom:15px;
+
+}
+
+.journal-card p{
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+/*====================================================
+
+4. ARTICLE CARDS
+
+====================================================*/
+
+.article-list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.article-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.article-card::before{
+
+content:"📄";
+
+position:absolute;
+
+top:20px;
+
+right:20px;
+
+font-size:1.6rem;
+
+opacity:.25;
+
+}
+
+.article-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.article-card h3{
+
+font-size:1.25rem;
+
+margin-bottom:18px;
+
+padding-right:35px;
+
+}
+
+.article-card .authors{
+
+font-weight:600;
+
+color:var(--primary);
+
+margin-bottom:12px;
+
+}
+
+.article-card p{
+
+font-size:.95rem;
+
+margin-bottom:15px;
+
+}
+
+.article-card .button{
+
+margin-top:auto;
+
+width:fit-content;
+
+}
+
+
+
+
+
+/*====================================================
+
+5. ISSUE SUMMARY
+
+====================================================*/
+
+.issue-summary{
+
+background:#F5FBF8;
+
+border-left:6px solid var(--primary);
+
+padding:30px;
+
+border-radius:8px;
+
+font-size:1.05rem;
+
+line-height:1.9;
+
+box-shadow:var(--shadow);
+
+}
+
+.issue-summary strong{
+
+display:block;
+
+margin-bottom:10px;
+
+font-size:1.15rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+6. ISSUE STATISTICS
+
+====================================================*/
+
+.issue-stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+margin:35px 0;
+
+}
+
+.stat-card{
+
+background:#fff;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.stat-card h4{
+
+font-size:.95rem;
+
+margin-bottom:12px;
+
+color:var(--primary);
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}
+
+.stat-card p{
+
+font-size:1.5rem;
+
+font-weight:700;
+
+margin:0;
+
+color:var(--dark);
+
+}
+
+
+
+
+
+/*====================================================
+
+7. ISSUE KEYWORDS
+
+====================================================*/
+
+.issue-keywords{
+
+margin-top:35px;
+
+padding:25px;
+
+background:#fff;
+
+border-radius:10px;
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+}
+
+.issue-keywords h3{
+
+margin-bottom:15px;
+
+}
+
+.issue-keywords p{
+
+margin:0;
+
+line-height:2;
+
+}
+
+
+
+
+
+/*====================================================
+
+8. BADGES
+
+====================================================*/
+
+.badge{
+
+display:inline-block;
+
+padding:8px 14px;
+
+border-radius:25px;
+
+background:var(--primary);
+
+color:#fff;
+
+font-size:.8rem;
+
+font-weight:600;
+
+margin-right:8px;
+
+margin-bottom:8px;
+
+}
+
+.badge-secondary{
+
+background:var(--secondary);
+
+color:#fff;
+
+}
+
+.badge-outline{
+
+background:#fff;
+
+color:var(--primary);
+
+border:1px solid var(--primary);
+
+}
+
+
+
+
+
+/*====================================================
+
+9. COVER IMAGE
+
+====================================================*/
+
+.issue-cover{
+
+text-align:center;
+
+}
+
+.issue-cover img{
+
+max-width:280px;
+
+margin:auto;
+
+border-radius:8px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+/*====================================================
+
+10. ISSUE HEADER
+
+====================================================*/
+
+.issue-header{
+
+display:grid;
+
+grid-template-columns:320px 1fr;
+
+gap:50px;
+
+align-items:flex-start;
+
+margin-top:20px;
+
+}
+
+
+
+
+
+/*====================================================
+
+11. ISSUE INFORMATION TABLE
+
+====================================================*/
+
+.journal-table{
+
+background:#fff;
+
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+margin-bottom:25px;
+
+}
+
+.journal-table tr{
+
+border-bottom:1px solid var(--border);
+
+}
+
+.journal-table tr:last-child{
+
+border-bottom:none;
+
+}
+
+.journal-table th{
+
+background:#F3F7F6;
+
+width:220px;
+
+padding:18px;
+
+text-align:left;
+
+font-weight:700;
+
+}
+
+.journal-table td{
+
+padding:18px;
+
+}
+
+
+
+
+
+/*====================================================
+
+12. ISSUE NAVIGATION
+
+====================================================*/
+
+.issue-navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+
+
+
+
+/*====================================================
+
+13. SIMPLE ICON CARDS
+
+Homepage statistics
+
+====================================================*/
+
+.icon-card{
+
+background:#fff;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.icon-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.icon-card i{
+
+font-size:2.5rem;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.icon-card h3{
+
+margin-bottom:10px;
+
+}
+
+.icon-card p{
+
+margin:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+END OF PHASE 2A
+
+====================================================*/
+
+/*====================================================
+
+PHASE 2B
+
+====================================================*/
+
+
+/* 14. FORMS */
+
+/* 15. CONTACT INFORMATION */
+
+/* 16. NEWS CARDS */
+
+/* 17. EDITORIAL BOARD */
+
+/* 18. CALL FOR PAPERS */
+
+/* 19. DOWNLOAD BOX */
+
+/* 20. LISTS */
+
+/* 21. TABLES */
+
+/* 22. ALERTS */
+
+/* 23. FOOTER COMPONENTS */
+
+/*====================================================
+
+14. FORMS
+
+====================================================*/
+
+form{
+
+margin-top:25px;
+
+}
+
+.form-group{
+
+margin-bottom:25px;
+
+}
+
+label{
+
+display:block;
+
+margin-bottom:10px;
+
+font-weight:600;
+
+color:var(--dark);
+
+}
+
+input,
+textarea,
+select{
+
+width:100%;
+
+padding:15px;
+
+font-size:1rem;
+
+font-family:inherit;
+
+border:1px solid var(--border);
+
+border-radius:8px;
+
+background:#fff;
+
+transition:.3s;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+outline:none;
+
+border-color:var(--primary);
+
+box-shadow:0 0 0 4px rgba(11,110,79,.10);
+
+}
+
+textarea{
+
+min-height:180px;
+
+resize:vertical;
+
+}
+
+/*====================================================
+
+15. CONTACT CARDS
+
+====================================================*/
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.contact-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.contact-card h3{
+
+margin:18px 0 12px;
+
+}
+
+.contact-card p{
+
+margin-bottom:8px;
+
+}
+
+.contact-card a{
+
+color:var(--primary);
+
+font-weight:600;
+
+}
+
+/*====================================================
+
+16. NEWS CARDS
+
+====================================================*/
+
+.news-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:35px;
+
+}
+
+.news-card{
+
+background:#fff;
+
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.news-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.news-image img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.news-content{
+
+padding:30px;
+
+}
+
+.news-date{
+
+font-size:.9rem;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:12px;
+
+display:block;
+
+}
+
+/*====================================================
+
+17. EDITORIAL BOARD
+
+====================================================*/
+
+.editor-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.editor-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.editor-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.editor-card img{
+
+width:130px;
+
+height:130px;
+
+margin:auto;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:20px;
+
+}
+
+.editor-card h3{
+
+margin-bottom:8px;
+
+}
+
+.editor-title{
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:8px;
+
+}
+
+/*====================================================
+
+18. CALL FOR PAPERS
+
+====================================================*/
+
+.call-box{
+
+background:linear-gradient(135deg,var(--primary),var(--primary-light));
+
+padding:50px;
+
+border-radius:12px;
+
+text-align:center;
+
+color:#fff;
+
+box-shadow:var(--shadow);
+
+}
+
+.call-box h2{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.call-box p{
+
+color:#fff;
+
+max-width:800px;
+
+margin:auto auto 25px;
+
+}
+
+.call-box .button{
+
+background:#fff;
+
+color:var(--primary);
+
+}
+
+/*====================================================
+
+19. DOWNLOAD BOX
+
+====================================================*/
+
+.download-box{
+
+background:#fff;
+
+padding:30px;
+
+border-left:5px solid var(--secondary);
+
+border-radius:8px;
+
+box-shadow:var(--shadow);
+
+margin:30px 0;
+
+}
+
+.download-box h3{
+
+margin-bottom:15px;
+
+}
+
+.download-box p:last-child{
+
+margin-bottom:0;
+
+}
+
+/*====================================================
+
+20. LISTS
+
+====================================================*/
+
+.content-list{
+
+margin:25px 0;
+
+padding-left:20px;
+
+}
+
+.content-list li{
+
+margin-bottom:14px;
+
+line-height:1.8;
+
+}
+
+.check-list{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.check-list li{
+
+padding-left:35px;
+
+position:relative;
+
+margin-bottom:15px;
+
+}
+
+.check-list li::before{
+
+content:"✓";
+
+position:absolute;
+
+left:0;
+
+color:var(--primary);
+
+font-weight:bold;
+
+}
+
+/*====================================================
+
+21. TABLES
+
+====================================================*/
+
+.table-responsive{
+
+overflow-x:auto;
+
+}
+
+table{
+
+background:#fff;
+
+box-shadow:var(--shadow);
+
+border-radius:8px;
+
+overflow:hidden;
+
+}
+
+thead{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+th{
+
+padding:16px;
+
+text-align:left;
+
+}
+
+td{
+
+padding:16px;
+
+border-bottom:1px solid var(--border);
+
+}
+
+tbody tr:nth-child(even){
+
+background:#fafafa;
+
+}
+
+/*====================================================
+
+22. ALERTS
+
+====================================================*/
+
+.alert{
+
+padding:22px;
+
+border-radius:8px;
+
+margin:25px 0;
+
+}
+
+.alert-info{
+
+background:#eaf6ff;
+
+border-left:5px solid #3498db;
+
+}
+
+.alert-success{
+
+background:#eef9f1;
+
+border-left:5px solid #27ae60;
+
+}
+
+.alert-warning{
+
+background:#fff8e8;
+
+border-left:5px solid #f39c12;
+
+}
+
+/*====================================================
+
+23. FOOTER COMPONENTS
+
+====================================================*/
+
+.footer-links{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.footer-links a{
+
+color:#ddd;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#fff;
+
+}
+
+.social-links{
+
+display:flex;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.social-links a{
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.1);
+
+color:#fff;
+
+transition:.3s;
+
+}
+
+.social-links a:hover{
+
+background:var(--secondary);
+
+}
+
+
+
+
+
+
