@@ -4,85 +4,2518 @@ AJSD WEBSITE
 
 PAGE STYLES
 
-This file contains styles specific to
-individual pages.
+PHASE 1
 
-Phase 2:
-- Home
-- About
-- Current Issue
-- Archives
-
-Phase 3:
-- Individual Issue Pages
-
-Phase 4:
-- Editorial Board
-- Author Guidelines
-- Publication Ethics
-- Contact
-- News
-- Call for Papers
+HOME PAGE
 
 ====================================================*/
+
+
 
 
 
 /*====================================================
 
-COMMON PAGE SECTIONS
+HOME HERO
 
 ====================================================*/
 
-.page-header{
+.hero{
+
+position:relative;
+
+min-height:650px;
+
+display:flex;
+
+align-items:center;
+
+background:linear-gradient(
+rgba(11,110,79,.82),
+rgba(11,110,79,.82)),
+url("../images/hero/hero1.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:#fff;
+
+}
+
+.hero-content{
+
+max-width:700px;
+
+}
+
+.hero-content h1{
+
+font-size:3.6rem;
+
+margin-bottom:25px;
+
+color:#fff;
+
+}
+
+.hero-content p{
+
+font-size:1.2rem;
+
+margin-bottom:35px;
+
+color:#fff;
+
+max-width:650px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+
+/*====================================================
+
+CURRENT ISSUE
+
+====================================================*/
+
+.current-issue{
+
+background:#fff;
+
+}
+
+.current-issue-wrapper{
+
+display:grid;
+
+grid-template-columns:350px 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.current-cover{
+
+text-align:center;
+
+}
+
+.current-cover img{
+
+width:100%;
+
+max-width:320px;
+
+margin:auto;
+
+border-radius:10px;
+
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+.current-details h2{
+
+margin-bottom:20px;
+
+}
+
+.current-meta{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+margin:25px 0;
+
+font-weight:600;
+
+color:var(--primary);
+
+}
+
+
+
+
+
+/*====================================================
+
+LATEST ARTICLES
+
+====================================================*/
+
+.latest-articles{
+
+background:#F8FAFC;
+
+}
+
+.latest-articles .article-list{
+
+margin-top:50px;
+
+}
+
+
+
+
+
+/*====================================================
+
+JOURNAL STATISTICS
+
+====================================================*/
+
+.statistics{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+.statistics h2{
+
+color:#fff;
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.statistics-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+}
+
+.statistics .stat-card{
+
+background:rgba(255,255,255,.10);
+
+color:#fff;
+
+border:none;
+
+backdrop-filter:blur(5px);
+
+}
+
+.statistics .stat-card h4{
+
+color:#fff;
+
+}
+
+.statistics .stat-card p{
+
+color:#fff;
+
+font-size:2rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+RESEARCH AREAS
+
+====================================================*/
+
+.research-areas{
+
+background:#fff;
+
+}
+
+.research-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+margin-top:45px;
+
+}
+
+
+
+
+
+.research-card{
+
+background:#fff;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.research-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.research-card h3{
+
+margin-top:20px;
+
+margin-bottom:15px;
+
+}
+
+.research-card p{
+
+margin-bottom:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+EDITORIAL PREVIEW
+
+====================================================*/
+
+.editorial-preview{
+
+background:#F8FAFC;
+
+}
+
+.editorial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+margin-top:45px;
+
+}
+
+
+
+
+
+/*====================================================
+
+CALL FOR PAPERS
+
+====================================================*/
+
+.call-section{
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--primary-light));
+
+color:#fff;
+
+text-align:center;
+
+padding:90px 0;
+
+}
+
+.call-section h2{
+
+color:#fff;
+
+margin-bottom:25px;
+
+}
+
+.call-section p{
+
+color:#fff;
+
+max-width:800px;
+
+margin:auto auto 30px;
+
+font-size:1.1rem;
+
+}
+
+.call-section .button{
+
+background:#fff;
+
+color:var(--primary);
+
+}
+
+.call-section .button:hover{
+
+background:var(--secondary);
+
+color:#fff;
+
+}
+
+
+
+
+
+/*====================================================
+
+LATEST NEWS
+
+====================================================*/
+
+.latest-news{
+
+background:#fff;
+
+}
+
+.news-grid{
+
+margin-top:45px;
+
+}
+
+
+
+
+
+/*====================================================
+
+HOME CTA
+
+====================================================*/
+
+.home-cta{
+
+background:#F8FAFC;
+
+text-align:center;
+
+padding:80px 0;
+
+}
+
+.home-cta h2{
+
+margin-bottom:25px;
+
+}
+
+.home-cta p{
+
+max-width:700px;
+
+margin:auto auto 35px;
+
+}
+
+
+
+
+
+/*====================================================
+
+SECTION SPACING
+
+====================================================*/
+
+.hero+
+
+section{
+
+padding-top:90px;
+
+}
+
+
+
+
+
+.current-issue,
+
+.latest-articles,
+
+.statistics,
+
+.research-areas,
+
+.editorial-preview,
+
+.call-section,
+
+.latest-news{
+
+padding:90px 0;
+
+}
+
+
+
+
+
+.section-heading{
+
+max-width:750px;
+
+margin:0 auto 55px;
+
+text-align:center;
+
+}
+
+
+
+
+
+.section-heading h2{
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+.section-heading p{
+
+font-size:1.05rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+HOMEPAGE HOVER EFFECTS
+
+====================================================*/
+
+.current-cover img,
+
+.research-card,
+
+.stat-card,
+
+.article-card,
+
+.news-card,
+
+.editor-card{
+
+transition:.35s ease;
+
+}
+
+
+
+
+
+.current-cover img:hover{
+
+transform:scale(1.02);
+
+}
+
+
+
+
+
+.research-card:hover,
+
+.article-card:hover,
+
+.news-card:hover,
+
+.editor-card:hover{
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+
+
+/*====================================================
+
+END OF PHASE 1
+
+====================================================*/
+
+
+/*====================================================
+
+AJSD WEBSITE
+
+PAGE STYLES
+
+PHASE 2
+
+CURRENT ISSUE
+ARCHIVES
+INDIVIDUAL ISSUE PAGES
+
+====================================================*/
+
+
+
+
+
+/*====================================================
+
+CURRENT ISSUE PAGE
+
+====================================================*/
+
+.current-issue-page{
+
+background:#F8FAFC;
+
+}
+
+.current-issue-page .page-banner{
+
+margin-bottom:0;
+
+}
+
+.issue-information{
+
+margin-top:60px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE HEADER
+
+====================================================*/
+
+.issue-header{
+
+display:grid;
+
+grid-template-columns:320px 1fr;
+
+gap:60px;
+
+align-items:flex-start;
+
+margin-bottom:60px;
+
+}
+
+.issue-cover{
+
+text-align:center;
+
+}
+
+.issue-cover img{
+
+width:100%;
+
+max-width:300px;
+
+margin:auto;
+
+border-radius:10px;
+
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+.issue-details{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE CITATION
+
+====================================================*/
+
+.issue-citation{
+
+margin-top:25px;
+
+padding:20px;
+
+background:#fff;
+
+border-left:5px solid var(--secondary);
+
+border-radius:8px;
+
+font-size:.95rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE META
+
+====================================================*/
+
+.issue-meta{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin:20px 0;
+
+}
+
+.issue-meta span{
+
+background:#fff;
+
+padding:10px 18px;
+
+border-radius:25px;
+
+font-weight:600;
+
+box-shadow:var(--shadow);
+
+}
+
+
+
+
+
+/*====================================================
+
+TABLE OF CONTENTS
+
+====================================================*/
+
+.table-of-contents{
+
+margin-top:60px;
+
+}
+
+.table-of-contents h2{
 
 margin-bottom:40px;
 
 }
 
-.page-introduction{
 
-max-width:900px;
-
-margin:0 auto 40px;
-
-text-align:center;
-
-}
-
-.page-introduction p{
-
-font-size:1.05rem;
-
-color:var(--text);
-
-}
 
 
 
 /*====================================================
 
-PAGE TITLES
+ARTICLE GRID
 
 ====================================================*/
 
-.page-title{
+.article-list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ARCHIVES PAGE
+
+====================================================*/
+
+.archives{
+
+background:#F8FAFC;
+
+}
+
+.archive-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ARCHIVE ISSUE CARD
+
+====================================================*/
+
+.archive-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+border-top:5px solid var(--primary);
+
+transition:.35s;
+
+display:flex;
+
+flex-direction:column;
+
+height:100%;
+
+}
+
+.archive-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.archive-card h3{
+
+margin-bottom:15px;
+
+}
+
+.archive-card .issue-date{
+
+font-size:.9rem;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:15px;
+
+}
+
+.archive-card p{
 
 margin-bottom:20px;
+
+}
+
+.archive-card .button{
+
+margin-top:auto;
+
+width:fit-content;
+
+}
+
+
+
+
+
+/*====================================================
+
+ARCHIVE YEAR LABEL
+
+====================================================*/
+
+.archive-year{
+
+margin:80px 0 35px;
+
+padding-bottom:15px;
+
+border-bottom:3px solid var(--secondary);
+
+}
+
+.archive-year h2{
+
+margin:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+ARCHIVE EMPTY
+
+Future Use
+
+====================================================*/
+
+.archive-empty{
+
+text-align:center;
+
+padding:100px 20px;
+
+}
+
+.archive-empty h2{
+
+margin-bottom:20px;
+
+}
+
+.archive-empty p{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+
+
+
+
+/*====================================================
+
+DOWNLOAD SECTION
+
+====================================================*/
+
+.download-section{
+
+margin-top:50px;
+
+padding:35px;
+
+background:#fff;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+}
+
+.download-section h3{
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+/*====================================================
+
+DOWNLOAD BUTTONS
+
+====================================================*/
+
+.download-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:25px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE NAVIGATION
+
+====================================================*/
+
+.issue-navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:70px;
+
+padding-top:40px;
+
+border-top:1px solid var(--border);
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+
+
+
+
+/*====================================================
+
+PREVIOUS / NEXT LINKS
+
+====================================================*/
+
+.issue-navigation .button{
+
+min-width:180px;
 
 text-align:center;
 
 }
 
-.page-subtitle{
+
+
+
+
+/*====================================================
+
+ISSUE SUMMARY BOX
+
+====================================================*/
+
+.issue-summary{
+
+margin-bottom:60px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE KEYWORDS
+
+====================================================*/
+
+.issue-keywords{
+
+margin-top:35px;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE STATISTICS
+
+====================================================*/
+
+.issue-stats{
+
+margin:40px 0;
+
+}
+
+
+
+
+
+/*====================================================
+
+ISSUE COVER HOVER
+
+====================================================*/
+
+.issue-cover img{
+
+transition:.35s ease;
+
+}
+
+.issue-cover img:hover{
+
+transform:scale(1.03);
+
+}
+
+
+
+
+
+/*====================================================
+
+TABLE OF CONTENTS HOVER
+
+====================================================*/
+
+.article-card{
+
+transition:.35s;
+
+}
+
+.article-card:hover{
+
+box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+/*====================================================
+
+SECTION SPACING
+
+====================================================*/
+
+.archives,
+
+.current-issue-page{
+
+padding-bottom:90px;
+
+}
+
+
+
+
+
+/*====================================================
+
+READY FOR FILTERS
+
+Future Releases
+
+====================================================*/
+
+.archive-toolbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:45px;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+
+
+
+
+.archive-search{
+
+max-width:350px;
+
+}
+
+
+
+
+
+.archive-filter{
+
+min-width:220px;
+
+}
+
+
+
+
+
+/*====================================================
+
+END OF PHASE 2
+
+====================================================*/
+
+/*====================================================
+
+AJSD WEBSITE
+
+PAGE STYLES
+
+PHASE 3
+
+INFORMATION PAGES
+
+====================================================*/
+
+
+
+
+
+/*====================================================
+
+GENERAL PAGE LAYOUT
+
+====================================================*/
+
+.page-content{
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.page-content h2{
+
+margin-top:60px;
+
+margin-bottom:25px;
+
+padding-bottom:12px;
+
+border-bottom:3px solid var(--secondary);
+
+}
+
+.page-content h3{
+
+margin-top:40px;
+
+margin-bottom:18px;
+
+color:var(--primary);
+
+}
+
+.page-content p{
+
+margin-bottom:20px;
+
+line-height:1.9;
+
+}
+
+
+
+
+
+/*====================================================
+
+CONTENT GRID
+
+====================================================*/
+
+.content-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:50px;
+
+align-items:start;
+
+}
+
+
+
+
+
+/*====================================================
+
+SIDEBAR
+
+====================================================*/
+
+.sidebar{
+
+display:flex;
+
+flex-direction:column;
+
+gap:30px;
+
+}
+
+.sidebar-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+}
+
+.sidebar-card h3{
+
+margin-top:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+ABOUT PAGE
+
+====================================================*/
+
+.about-page{
+
+background:#F8FAFC;
+
+}
+
+.about-highlight{
+
+background:#fff;
+
+padding:40px;
+
+border-left:6px solid var(--primary);
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+margin:40px 0;
+
+}
+
+.about-mission{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+
+
+
+
+/*====================================================
+
+EDITORIAL BOARD PAGE
+
+====================================================*/
+
+.editorial-page{
+
+background:#fff;
+
+}
+
+.editor-board-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+.editor-board-card{
+
+background:#fff;
+
+padding:35px;
 
 text-align:center;
 
-color:#666;
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.editor-board-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.editor-board-card img{
+
+width:140px;
+
+height:140px;
+
+border-radius:50%;
+
+margin:auto auto 20px;
+
+object-fit:cover;
+
+}
+
+.editor-board-card h3{
+
+margin-bottom:10px;
+
+}
+
+.editor-affiliation{
+
+color:var(--primary);
+
+font-weight:600;
+
+}
+
+
+
+
+
+/*====================================================
+
+AUTHOR GUIDELINES
+
+====================================================*/
+
+.guidelines-page{
+
+background:#F8FAFC;
+
+}
+
+.guideline-section{
+
+background:#fff;
+
+padding:40px;
+
+margin-bottom:35px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+}
+
+.guideline-section h2{
+
+margin-top:0;
+
+border:none;
+
+padding-bottom:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+CHECKLIST
+
+====================================================*/
+
+.checklist{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.checklist-item{
+
+display:flex;
+
+gap:15px;
+
+padding:20px;
+
+background:#F5FBF8;
+
+border-left:5px solid var(--primary);
+
+border-radius:8px;
+
+}
+
+
+
+
+
+/*====================================================
+
+PUBLICATION ETHICS
+
+====================================================*/
+
+.ethics-page{
+
+background:#fff;
+
+}
+
+.ethics-section{
+
+background:#fff;
+
+padding:40px;
+
+margin-bottom:35px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+border-top:5px solid var(--primary);
+
+}
+
+.ethics-section h2{
+
+margin-top:0;
+
+border:none;
+
+}
+
+
+
+
+
+/*====================================================
+
+CONTACT PAGE
+
+====================================================*/
+
+.contact-page{
+
+background:#F8FAFC;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+margin-top:50px;
+
+}
+
+.contact-information{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.contact-form{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+}
+
+
+
+
+
+/*====================================================
+
+CALL FOR PAPERS
+
+====================================================*/
+
+.call-page{
+
+background:#fff;
+
+}
+
+.call-highlight{
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--primary-light));
+
+padding:50px;
+
+color:#fff;
+
+border-radius:12px;
+
+text-align:center;
 
 margin-bottom:50px;
 
 }
+
+.call-highlight h2{
+
+color:#fff;
+
+border:none;
+
+margin:0 0 20px;
+
+padding:0;
+
+}
+
+.call-highlight p{
+
+color:#fff;
+
+}
+
+
+
+
+
+/*====================================================
+
+NEWS PAGE
+
+====================================================*/
+
+.news-page{
+
+background:#F8FAFC;
+
+}
+
+.news-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:40px;
+
+margin-top:50px;
+
+}
+
+.news-item{
+
+display:grid;
+
+grid-template-columns:280px 1fr;
+
+gap:35px;
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.news-item:hover{
+
+transform:translateY(-6px);
+
+}
+
+.news-item img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+}
+
+.news-content h2{
+
+margin-top:0;
+
+border:none;
+
+padding:0;
+
+margin-bottom:15px;
+
+}
+
+.news-meta{
+
+font-size:.9rem;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/*====================================================
+
+INFORMATION BOXES
+
+====================================================*/
+
+.info-box{
+
+background:#F5FBF8;
+
+padding:30px;
+
+border-left:5px solid var(--primary);
+
+border-radius:10px;
+
+margin:40px 0;
+
+}
+
+.info-box h3{
+
+margin-top:0;
+
+}
+
+
+
+
+
+/*====================================================
+
+QUOTE BOX
+
+====================================================*/
+
+.quote-box{
+
+padding:40px;
+
+font-style:italic;
+
+background:#fff;
+
+border-left:6px solid var(--secondary);
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+margin:40px 0;
+
+}
+
+
+
+
+
+/*====================================================
+
+DOCUMENT LINKS
+
+====================================================*/
+
+.document-links{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.document-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.document-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+
+
+
+
+/*====================================================
+
+PAGE INTRODUCTION
+
+====================================================*/
+
+.page-intro{
+
+max-width:850px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+}
+
+.page-intro p{
+
+font-size:1.1rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+SECTION SPACING
+
+====================================================*/
+
+.about-page,
+
+.editorial-page,
+
+.guidelines-page,
+
+.ethics-page,
+
+.contact-page,
+
+.call-page,
+
+.news-page{
+
+padding-bottom:90px;
+
+}
+
+
+/*====================================================
+
+END OF PHASE 3
+
+====================================================*/
+
+/*====================================================
+
+AJSD WEBSITE
+
+PAGE STYLES
+
+PHASE 4
+
+SITE EXPERIENCE & FINISHING TOUCHES
+
+====================================================*/
+
+
+
+
+
+/*====================================================
+
+SECTION ANIMATIONS
+
+====================================================*/
+
+.fade-section{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:all .8s ease;
+
+}
+
+.fade-section.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+
+
+/*====================================================
+
+PAGE TRANSITIONS
+
+====================================================*/
+
+body{
+
+animation:pageFade .5s ease;
+
+}
+
+@keyframes pageFade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+
+/*====================================================
+
+HERO IMAGE OVERLAY
+
+====================================================*/
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+
+rgba(0,0,0,.30),
+
+rgba(0,0,0,.55)
+
+);
+
+pointer-events:none;
+
+}
+
+.hero .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+
+
+/*====================================================
+
+SCROLL INDICATOR
+
+====================================================*/
+
+.scroll-indicator{
+
+position:absolute;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+color:#fff;
+
+font-size:.9rem;
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+40%{
+
+transform:translate(-50%,-10px);
+
+}
+
+60%{
+
+transform:translate(-50%,-5px);
+
+}
+
+}
+
+
+
+
+
+/*====================================================
+
+BACK TO TOP BUTTON
+
+====================================================*/
+
+.back-to-top{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:52px;
+
+height:52px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:var(--primary);
+
+color:#fff;
+
+border-radius:50%;
+
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.back-to-top.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+background:var(--secondary);
+
+transform:translateY(-4px);
+
+}
+
+
+
+
+
+/*====================================================
+
+STICKY HEADER SHADOW
+
+====================================================*/
+
+header.scrolled{
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/*====================================================
+
+IMAGE ZOOM
+
+====================================================*/
+
+.image-hover{
+
+overflow:hidden;
+
+border-radius:10px;
+
+}
+
+.image-hover img{
+
+transition:.45s ease;
+
+}
+
+.image-hover:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+
+
+
+/*====================================================
+
+ARTICLE READING WIDTH
+
+====================================================*/
+
+.article-content{
+
+max-width:900px;
+
+margin:auto;
+
+line-height:1.95;
+
+}
+
+
+
+
+
+/*====================================================
+
+ARTICLE BLOCKQUOTE
+
+====================================================*/
+
+blockquote{
+
+padding:30px;
+
+margin:40px 0;
+
+border-left:6px solid var(--secondary);
+
+background:#F8FAFC;
+
+font-style:italic;
+
+font-size:1.08rem;
+
+}
+
+
+
+
+
+/*====================================================
+
+CODE BLOCKS
+
+Future
+
+====================================================*/
+
+pre{
+
+background:#1F2937;
+
+padding:25px;
+
+border-radius:10px;
+
+overflow:auto;
+
+color:#fff;
+
+}
+
+
+
+
+
+/*====================================================
+
+FIGURES
+
+====================================================*/
+
+figure{
+
+margin:50px auto;
+
+text-align:center;
+
+}
+
+figure img{
+
+border-radius:10px;
+
+box-shadow:var(--shadow);
+
+}
+
+figcaption{
+
+margin-top:12px;
+
+font-size:.9rem;
+
+color:#666;
+
+}
+
+
+
+
+
+/*====================================================
+
+TABLE OF CONTENTS HIGHLIGHT
+
+====================================================*/
+
+.article-card:hover h3{
+
+color:var(--primary);
+
+}
+
+
+
+
+
+/*====================================================
+
+DOWNLOAD BUTTON EFFECT
+
+====================================================*/
+
+.article-card .button{
+
+margin-top:20px;
+
+}
+
+.article-card .button:hover{
+
+letter-spacing:.4px;
+
+}
+
+
+
+
+
+/*====================================================
+
+LINK EFFECTS
+
+====================================================*/
+
+.content-section a{
+
+transition:.3s;
+
+}
+
+.content-section a:hover{
+
+color:var(--secondary);
+
+}
+
+
+
+
+
+/*====================================================
+
+FOCUS ACCESSIBILITY
+
+====================================================*/
+
+a:focus,
+
+button:focus,
+
+input:focus,
+
+textarea:focus,
+
+select:focus{
+
+outline:3px solid rgba(46,204,113,.4);
+
+outline-offset:4px;
+
+}
+
+
+
+
+
+/*====================================================
+
+TEXT SELECTION
+
+====================================================*/
+
+::selection{
+
+background:var(--secondary);
+
+color:#fff;
+
+}
+
+
+
+
+
+/*====================================================
+
+PRINT STYLES
+
+====================================================*/
+
+@media print{
+
+header,
+
+footer,
+
+.button,
+
+.back-to-top,
+
+nav,
+
+.page-banner{
+
+display:none;
+
+}
+
+body{
+
+background:#fff;
+
+color:#000;
+
+}
+
+.content-section{
+
+padding:0;
+
+}
+
+.article-card{
+
+box-shadow:none;
+
+border:1px solid #ddd;
+
+break-inside:avoid;
+
+}
+
+}
+
+
+
+
+
+/*====================================================
+
+LOADING PLACEHOLDER
+
+Future
+
+====================================================*/
+
+.loading{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:80px;
+
+}
+
+.loading::after{
+
+content:"";
+
+width:40px;
+
+height:40px;
+
+border:4px solid #ddd;
+
+border-top-color:var(--primary);
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
 
 
 
@@ -94,14 +2527,123 @@ SECTION DIVIDERS
 
 .section-divider{
 
-margin:70px auto;
-
 width:120px;
 
 height:4px;
 
 background:var(--secondary);
 
-border-radius:20px;
+margin:60px auto;
+
+border-radius:999px;
 
 }
+
+
+
+
+
+/*====================================================
+
+PAGE END CTA
+
+====================================================*/
+
+.page-end{
+
+margin-top:90px;
+
+padding:60px;
+
+text-align:center;
+
+background:#F8FAFC;
+
+border-radius:10px;
+
+}
+
+.page-end h2{
+
+margin-bottom:20px;
+
+}
+
+.page-end p{
+
+max-width:700px;
+
+margin:auto auto 30px;
+
+}
+
+
+
+
+
+/*====================================================
+
+EMPTY STATES
+
+====================================================*/
+
+.empty-state{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.empty-state img{
+
+max-width:180px;
+
+margin-bottom:25px;
+
+}
+
+.empty-state h2{
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/*====================================================
+
+COMING SOON
+
+====================================================*/
+
+.coming-soon{
+
+padding:80px;
+
+text-align:center;
+
+background:#F8FAFC;
+
+border-radius:12px;
+
+border:2px dashed var(--border);
+
+}
+
+
+
+
+
+/*====================================================
+
+END OF PAGES.CSS
+
+VERSION 1.0
+
+====================================================*/
+
+
+
