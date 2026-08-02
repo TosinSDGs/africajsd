@@ -186,7 +186,65 @@ background:var(--secondary);
 
 }
 
+/*====================================================
 
+EDITORIAL BOARD PREVIEW
+
+====================================================*/
+
+.board-intro{
+
+    max-width:900px;
+
+    margin:25px auto 40px;
+
+    text-align:center;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.board-preview{
+
+    max-width:800px;
+
+    margin:0 auto 40px;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+.board-preview li{
+
+    padding:18px 0;
+
+    border-bottom:1px solid #e5e7eb;
+
+    font-size:1.05rem;
+
+    line-height:1.7;
+
+}
+
+.board-preview li:last-child{
+
+    border-bottom:none;
+
+}
+
+.board-preview strong{
+
+    color:var(--primary);
+
+    font-size:1.08rem;
+
+}
 
 /*====================================================
 
